@@ -1,0 +1,272 @@
+/*
+ * SASS allows style rules to be nested inside of other rules, which causes
+ * the nested rules to only apply within the outer rule's selector
+ */
+body {
+  margin: 0 auto; }
+
+section {
+  display: flex;
+  flex-flow: column; }
+
+a {
+  text-decoration: none; }
+
+header {
+  background: #ff003b;
+  border: solid black;
+  width: 100%; }
+
+footer {
+  background: #43ff00;
+  border: 1px solid black;
+  width: 100%; }
+
+article {
+  background: #007fdb;
+  width: 100%;
+  line-height: 1.5em; }
+
+.aside {
+  width: 100%;
+  background: gold;
+  border: 1px solid black; }
+
+nav {
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+ul {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+li {
+  background: grey;
+  display: flex;
+  border: 1px solid black;
+  width: 100%;
+  height: 3em; }
+
+#myndaDiv {
+  width: 50%;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto; }
+
+img {
+  width: 100%; }
+
+#box-set {
+  display: flex;
+  flex-direction: row;
+  border: solid black;
+  overflow: auto;
+  text-align: center; }
+
+.box {
+  border: 1px solid black;
+  width: 3em;
+  height: 3em;
+  padding-right: 0em;
+  margin-right: 0em;
+  padding-left: 0em;
+  margin-left: 0em; }
+
+#box1 {
+  margin-left: 5%;
+  background: #006abc; }
+
+#box2 {
+  background: #32a6ff; }
+
+#box3 {
+  background: #75caff; }
+
+#box4 {
+  background: #c1e7ff; }
+
+@media screen and (max-width: 30em) {
+  header {
+    order: 1; }
+
+  nav {
+    order: 9; }
+
+  section {
+    order: 2; }
+
+  article {
+    order: 3; }
+
+  #aside1 {
+    order: 6; }
+
+  #aside2 {
+    order: 7; }
+
+  footer {
+    order: 8; } }
+@media screen and (min-width: 30em) and (max-width: 48em) {
+  header {
+    order: 1; }
+
+  section {
+    order: 2; }
+
+  article {
+    order: 3; }
+
+  #aside1 {
+    order: 5; }
+
+  #aside2 {
+    order: 6; }
+
+  footer {
+    order: 7; }
+
+  #myndaDiv {
+    width: 40%;
+    border: solid black;
+    overflow: auto; }
+
+  img {
+    float: left;
+    width: 50%; }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    order: 8; }
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+
+  li {
+    display: flex;
+    border: 1px solid black;
+    width: 20%;
+    height: 3em; } }
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  header {
+    order: 2; }
+
+  nav {
+    order: 1;
+    flex-direction: row;
+    width: 100%; }
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+
+  li {
+    display: flex;
+    width: 20%;
+    height: 3em; }
+
+  section {
+    flex-flow: row;
+    order: 3; }
+
+  body {
+    max-width: 60em; }
+
+  article {
+    order: 5; }
+
+  #aside1 {
+    order: 4; }
+
+  #aside2 {
+    order: 6; }
+
+  footer {
+    order: 7; }
+
+  #myndaDiv {
+    width: 100%;
+    border: solid black;
+    overflow: auto; }
+
+  img {
+    float: left;
+    width: 25%; } }
+@media screen and (min-width: 64em) {
+  header {
+    order: 2; }
+
+  nav {
+    order: 1;
+    flex-direction: row;
+    width: 100%; }
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+
+  li {
+    display: flex;
+    width: 20%;
+    height: 3em; }
+
+  section {
+    flex-flow: row;
+    order: 3; }
+
+  body {
+    max-width: 60em; }
+
+  article {
+    order: 5; }
+
+  #aside1 {
+    order: 4; }
+
+  #aside2 {
+    order: 6; }
+
+  footer {
+    order: 7; }
+
+  #myndaDiv {
+    width: 100%;
+    border: solid black;
+    overflow: auto; }
+
+  img {
+    float: left;
+    width: 25%; }
+
+  #box-set {
+    flex-direction: column;
+    border: solid black;
+    overflow: auto;
+    text-align: center;
+    position: absolute;
+    left: 1%;
+    top: 30%; }
+
+  #box1 {
+    margin-left: 0%; }
+
+  .box {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em; } }
+
+/*# sourceMappingURL=adal.css.map */

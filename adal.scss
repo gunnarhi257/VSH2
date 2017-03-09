@@ -1,0 +1,148 @@
+/*
+ * SASS allows style rules to be nested inside of other rules, which causes
+ * the nested rules to only apply within the outer rule's selector
+ */
+//Staerdir:
+$skjaStaerd1: 30em;
+$skjaStaerd2: 48em;
+$skjaStaerd3: 64em;
+$MW: 60em;
+$box_breidd: 3em;
+$box_haed: 3em;
+$height_li: 3em;
+$linubil: 1.5em;
+
+//Litir:
+$bakgrunnur: #ff003b;
+$bakgrunnur_aside: gold;
+$bakgrunnur_article: #007fdb;
+$bakgrunnur_header: #ff003b;
+$bakgrunnur_footer: #43ff00;
+$bakgrunnur_box1: #006abc;
+$bakgrunnur_box2: #32a6ff;
+$bakgrunnur_box3: #75caff;
+$bakgrunnur_box4: #c1e7ff;
+$bakgrunnur_nav:  lightblue;
+$bakgrunnur_li:   grey;
+
+//Rammar (borders):
+$rammi_litill: 1px solid black;
+$rammi_stor: solid black;
+
+
+$myColor1: navy;
+$myColor2: 000080;
+$myStringVar: " with an appended string";
+$myFontSize: 18px;
+$thinBorder: 1px solid $myColor1;
+$paddingVar: 15px 15px 15px 15px;
+
+body {
+	margin: 0 auto;
+}
+section{
+  display: flex;
+  flex-flow: column;
+}
+
+a{
+	text-decoration: none;
+}
+header{
+	background: $bakgrunnur_header;
+	border: $rammi_stor;
+	width: 100%;
+}
+footer{
+	background: $bakgrunnur_footer;
+	border:$rammi_litill;
+	width:100%;
+}
+article{
+	background:$bakgrunnur_article ;
+	width: 100%;
+  	line-height: $linubil;
+}
+.aside{
+  width: 100%;
+  background:$bakgrunnur_aside;
+  border:$rammi_litill;
+}
+nav{
+  background: $bakgrunnur_nav;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+ul{
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+li{
+	background: $bakgrunnur_li;
+	display: flex;
+	border: $rammi_litill;
+	width: 100%;
+	height: $height_li;
+}
+#myndaDiv{
+	width: 50%;
+	border: $rammi_litill;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img{
+	width: 100%;
+}
+
+#box-set{
+	display: flex;
+	flex-direction: row;
+	border: $rammi_stor;
+	overflow: auto;
+    text-align: center;
+}
+
+.box{
+	border:$rammi_litill;
+	width:$box_haed;
+	height: $box_breidd;
+	padding-right:0em;
+	margin-right:0em;
+	padding-left:0em;
+	margin-left:0em;
+}
+#box1{
+	margin-left:5%;
+	background:$bakgrunnur_box1;
+}
+#box2{
+	background:$bakgrunnur_box2;
+}
+#box3{
+	background:$bakgrunnur_box3;
+}
+#box4{
+	background:$bakgrunnur_box4;
+}
+
+@media screen and (max-width: 30em){
+	@import "s1.scss"
+}
+@media screen and (min-width: 30em) and (max-width: 48em){
+	@import "s2.scss"
+}
+@media screen and (min-width: 48em) and (max-width: 64em){
+	@import "s3.scss"
+}
+@media screen and (min-width: 64em){
+	@import "s4.scss"
+}
